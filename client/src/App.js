@@ -13,9 +13,10 @@ function App() {
       <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <Routes>
+          <Route path='/' exact Component={Projects} />
           <Route path='/team' exact Component={Team} />
           <Route path='/project/:id' Component={ProjectDetail} />
-          <Route path='/projects' Component={Projects} />
+          {/* <Route path='/projects' Component={Projects} /> */}
           <Route path='/:id'  Component={PageNotFound}/>
         </Routes>
        </Router>
