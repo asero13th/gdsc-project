@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <Routes>
           <Route path='/team' exact Component={Team} />
