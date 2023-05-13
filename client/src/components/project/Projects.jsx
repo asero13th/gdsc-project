@@ -5,7 +5,7 @@ import { fakedata } from './fakedata'
 
 const Projects = () => {
   return (
-    <div className='project-holder'>
+    <div className='project-holder container row'>
       {
         fakedata.map((item) =>{
           return (

@@ -8,6 +8,7 @@ import "./projectCard.css"
 import "./projectDetail.css"
 import "./navbar.css"
 import "./teamPage.css"
+import "./footer.css"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

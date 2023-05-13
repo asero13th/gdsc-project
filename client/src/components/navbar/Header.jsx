@@ -10,12 +10,15 @@ const Header = () => {
         <Container className='d-flex justify-content-between'>
         <Navbar.Brand className='logo' href="#home">
             <img src={logo} alt='navigtaion'></img>
+              <div>
+                <p className='text-muted text-size-12'>Addis Abeba Science and technology <br/>university</p>
+              </div>   
         </Navbar.Brand>
-        <Nav className="">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#project">Project</Nav.Link>
-            <Nav.Link href="#teams">Teams</Nav.Link>
-            <Nav.Link href="#Events">Events</Nav.Link>
+        <Nav>
+            <Nav.Link href="/home" className='mx-3'>Home</Nav.Link>
+            <Nav.Link href="/projects" className='mx-3'>Project</Nav.Link>
+            <Nav.Link href="/team" className='mx-3'>Teams</Nav.Link>
+            <Nav.Link href="/Events" className='mx-3'>Events</Nav.Link>
         </Nav>
         </Container>
         </Navbar>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Project = ({title, description}) => {
   return (
-    <div>
+    <div className=' container col-sm-1'>
       <div className='project'>
        <div className='project-image'>
            <div className='title-and-link'>

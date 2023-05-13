@@ -2,11 +2,12 @@ import React from 'react'
 import logo from "../../assets/logo.png"
 const Footer = () => {
   return (
-    <div className='container p-10'>
+    <div className='custom-footer container p-10'>
         <div className='row'>
         <div className='col-sm-3'>
             <img src={logo} alt='logo-of-gdsc'></img>
-            <p>Copyright &Copyright 2023 all rights reserved</p>
+            <p className='mt-1 text-muted'>Addis Abeba Science and technology <br/>university</p>
+            <p className='text-muted mt-3'>Copyright<sup>&#169;</sup>2023 all rights reserved</p>
         </div>
         <div className='col-sm-3 text-start'>
             <ul>
@@ -33,8 +34,7 @@ const Footer = () => {
                 <li  className='small p-1'><a>Action on Google</a></li>
         </ul>
         </div>
-        </div>
-        
+        </div> 
     </div>
   )
 }
