@@ -10,7 +10,6 @@
     position: relative;
     left: 40%;
     top: 88%;
-
 }
 .header-image h6{
     color: #333;
@@ -78,3 +77,26 @@
 .contributors{
     margin-top: 40px;
 }
+
+@media (max-width: 912px) {
+    .header-image div {
+      position: relative;
+      left: 30% ;
+      top: 95%;
+    }
+  }
+@media (max-width: 550px) {
+    .header-image div {
+      position: relative;
+      left: 10%;
+      top: 95%;
+    }
+  }
+
+@media (max-width: 360px) {
+    .header-image div {
+      position: relative;
+      left: 3% ;
+    }
+  }
+ 

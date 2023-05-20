@@ -9,7 +9,6 @@ const ProjectDetail = () => {
         <div className='header-image container mt-3'>
             <div className=''>
                 <h6>App development session 1</h6>
-                
             </div>
         </div>
         <div className='container mt-5'>
