@@ -49,11 +49,11 @@ const ProjectDetail = () => {
                     <div className='mt-5'>
                     <h6>Contributors</h6>
                     </div>
-                <div className='row'>
+                <div className='row contributors'>
                     {
                         projectSessions.map((item) => {
                             return (
-                                <div className='col-sm-4 mt-3'>
+                                <div className='col-sm-4 mt-3 contributors'>
                                     <Contributer />
                                 </div>  
                             )

@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from "../../assets/logo.png"
 const Header = () => {
   return (
-    <div>
+    <div className=''>
         <Navbar bg="" variant="light">
         <Container className='d-flex justify-content-between'>
         <Navbar.Brand className='logo' href="#home">
@@ -14,7 +14,7 @@ const Header = () => {
                 <p className='text-muted text-size-12'>Addis Abeba Science and technology <br/>university</p>
               </div>   
         </Navbar.Brand>
-        <Nav>
+        <Nav className='custom-navigation'>
             <Nav.Link href="/home" className='mx-3'>Home</Nav.Link>
             <Nav.Link href="/projects" className='mx-3'>Project</Nav.Link>
             <Nav.Link href="/team" className='mx-3'>Teams</Nav.Link>

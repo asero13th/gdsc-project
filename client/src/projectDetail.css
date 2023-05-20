@@ -78,7 +78,7 @@
     margin-top: 40px;
 }
 
-@media (max-width: 912px) {
+@media (max-width: 1000px) {
     .header-image div {
       position: relative;
       left: 30% ;
@@ -97,6 +97,13 @@
     .header-image div {
       position: relative;
       left: 3% ;
+    }
+    .contributors{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
   }
  

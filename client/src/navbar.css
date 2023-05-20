@@ -15,3 +15,8 @@
     font-size: 13px;
     font-weight: 450;
 }
+@media (max-width: 600px) {
+    .custom-navigation{
+        opacity: 0;
+    }
+  }
