@@ -1,20 +1,34 @@
 import React from 'react'
-
-const Project = ({title, description}) => {
+import { useState } from 'react';
+import { Link } from 'react-router-dom'
+const Project = ({title, description , id, url}) => {
+  let imageUrls = [""]
+  if (url){
+    imageUrls = url.split(';');
+  }
+   
+ 
   return (
-    <div className=' container col-sm-1'>
-      <div className='project'>
-       <div className='project-image'>
-           <div className='title-and-link'>
-           <h6>{title}</h6>
-            <a href='https://www.somewhere.com'>View project<i class="fa-thin fa-arrow-right"></i></a>
-           </div>
-       </div>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repellat error aliquam molestias eligendi 
-         praesentium
-       </p>
-     </div>
+    
+      <div className=' container col-sm-1'>
+      
+        <div className='project'>
+        <Link to={`/project/${id}`} className="text-decoration-none">
+        <div 
+        className='project-image'
+        style={{ backgroundImage: `url(${imageUrls[0]})`}}
+        >
+            <div className='title-and-link'>
+            <h6>{title}</h6>
+              <a href='https://www.somewhere.com'>View project<i class="fa-thin fa-arrow-right"></i></a>
+            </div>
+        </div>
+        </Link>
+        <p>{description}</p>
+      </div>
+      
     </div>
+  
   )
 }
 

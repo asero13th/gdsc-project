@@ -116,6 +116,7 @@ module.exports = {
         },
         borderRadius: {
           primary: "20px",
+          circle: "50%",
         },
       },
       screens: {

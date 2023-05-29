@@ -1,10 +1,10 @@
 import React from 'react'
 import projectImage from "../../assets/project-image.jpg";
-const ProjectMiniCard = () => {
+const ProjectMiniCard = ({image}) => {
   return (
     <div className='project-Mini-Card'>
            <div className='container'>
-              <img src={projectImage} alt='project-photos'/>
+              <img src={image} alt='project-photos'/>
            </div>
     </div>
   )
