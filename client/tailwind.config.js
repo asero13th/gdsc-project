@@ -10,7 +10,7 @@ module.exports = {
           "3p": "3%",
           "4p": "4%",
           "5p": "5%",
-          "6p": "6%",
+          "6p": "6%", 
           "7p": "7%",
           "8p": "8%",
           "9p": "9%",
@@ -326,4 +326,4 @@ module.exports = {
       }),
     },
     plugins: [require("tailwindcss-rtl"), require("daisyui")],
-  };
+  };  

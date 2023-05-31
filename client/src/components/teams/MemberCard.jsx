@@ -8,7 +8,7 @@ const MemberCard = (props) => {
         <div className='container'>
             <Card.Img 
             variant="top" 
-            src={user} 
+            src={ props.member.image_url? props.member.image_url : user} 
             style={{
 
                 maxHeight: "25vh"
@@ -24,7 +24,7 @@ const MemberCard = (props) => {
         </Card.Text>
         </Card.Body>
         <div className='social-media container mb-3'>
-            <a href={`${props.member.email}`}><i class="fab fa-telegram social-media-icon"></i></a>
+            <a href={`${props.member.telegram_url}`}><i class="fab fa-telegram social-media-icon"></i></a>
             <a href={`${props.member.github_url}`}><i class="fab fa-github social-media-icon"></i></a>
             <a href={`${props.member.linkedin_url}`}><i class="fab fa-linkedin-in social-media-icon"></i></a>
         </div>

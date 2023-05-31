@@ -1,8 +1,6 @@
 import React, { useState, useEffect, createContext, useContext } from 'react';
-import {projectSessions} from './fakedata';
 import ProjectMiniCard from './ProjectMiniCard'
 import Contributer from './Contributer';
-import Button from 'react-bootstrap/Button';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 const ProjectContext = createContext();

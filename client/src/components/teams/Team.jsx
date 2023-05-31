@@ -51,7 +51,7 @@ const CardList = () => {
             {
               members.map((member) =>{
                 return(
-                  <div className='col-sm-4'>
+                  <div className='flex flex-col sm:flex-row'>
                     <MemberCard key={member.id} member = { member }/>
                   </div>
                       )
