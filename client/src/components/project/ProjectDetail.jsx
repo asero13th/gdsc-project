@@ -3,6 +3,7 @@ import ProjectMiniCard from './ProjectMiniCard'
 import Contributer from './Contributer';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import Spinner from 'react-bootstrap/Spinner';
 const ProjectContext = createContext();
 
 const ProjectProvider = ({ children }) => {
@@ -38,7 +39,11 @@ const ProjectProvider = ({ children }) => {
     const { project, contributors } = useContext(ProjectContext);
     console.log(contributors)
     if (!project) {
-      return <div>Loading...</div>;
+      return (
+        <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+        </Spinner>
+      )
     }
 
     let imageUrls = [""]

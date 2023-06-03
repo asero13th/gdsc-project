@@ -4,7 +4,7 @@ import user from "../../assets/Sample_User_Icon.png";
 
 const MemberCard = (props) => {
   return (
-    <Card style={{ width: '18rem' }} className='team-member-card mb-5'>
+    <Card style={{ width: '18rem' }} className='team-member-card mb-5 mx-3'>
         <div className='container'>
             <Card.Img 
             variant="top" 

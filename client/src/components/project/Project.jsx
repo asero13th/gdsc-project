@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 const Project = ({title, description , id, url}) => {
+
   let imageUrls = [""]
   if (url){
     imageUrls = url.split(';');
@@ -10,8 +11,7 @@ const Project = ({title, description , id, url}) => {
  
   return (
     
-      <div className=' container col-sm-1'>
-      
+      <div className='mx-4'>
         <div className='project'>
         <Link to={`/project/${id}`} className="text-decoration-none">
         <div 
@@ -25,8 +25,7 @@ const Project = ({title, description , id, url}) => {
         </div>
         </Link>
         <p>{description}</p>
-      </div>
-      
+      </div>     
     </div>
   
   )

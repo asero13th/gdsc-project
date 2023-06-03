@@ -44,10 +44,10 @@ const CardList = () => {
      </div>
       <div >
       {Object.entries(groupedData).map(([startYear, members]) => (
-        <Accordion defaultActiveKey="0">
-        <Accordion.Item  className='mt-5 mx-5'>
+        <Accordion defaultActiveKey="0" className=''>
+        <Accordion.Item  className='mt-3 mx-5 '>
         <Accordion.Header><span>{startYear}</span>/<span>{parseInt(startYear) + 1}  year</span></Accordion.Header>
-          <Accordion.Body className='row core-team-member-card mt-4'>
+          <Accordion.Body className=' core-team-member-card  flex flex-row flex-wrap'>
             {
               members.map((member) =>{
                 return(
