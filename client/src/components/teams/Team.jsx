@@ -81,10 +81,6 @@ const CardList = () => {
                     ))
                    }
              
-            
-          
-           
-            
           </Accordion.Body>
         </Accordion.Item>
         </Accordion>

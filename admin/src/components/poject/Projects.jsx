@@ -19,16 +19,17 @@ const ProjectList = () => {
   }, []);
 
   
+  
   if (!projects){
     return <div>loading...</div>
   }
 
   return (
-    <div className='container mx-auto max-w-7xl mt-3'>
-      <div className='border border-solid border-gray-400 p-2 rounded d-flex justify-content-between mb-5 mt-3'>
+    <div className='container mx-auto max-w-7xl mt-3  top-0 right-10 absolute h-screen w-2/3'>
+      <div className='border border-solid border-gray-900 p-2 rounded d-flex justify-content-between mb-5 mt-3'>
         <h4 className='fw-bold mt-2'>Projects</h4>
         <div>
-            <Button variant="primary" size='sm' href='/admin/project/new'>
+            <Button className='bg-blue-500 border-blue-500 px-4' variant="primary" size='sm' href='/admin/project/new'>
                 Add+
             </Button>
         </div>
@@ -40,11 +41,11 @@ const ProjectList = () => {
                 as="li"
                 className="d-flex justify-content-between align-items-start border border-solid border-gray-400 p-2 rounded"
                 >
-                <div className="ms-2 me-auto mt-2">
+                <div className="ms-2 me-auto mt-2 text-gray-400 text-2.5xl">
                     {project.name}
                 </div>
-                <Button size='sm'>
-                    <a size="sm"  href={`/admin/project/edit/${project.id}`}><i class="fas fa-arrow-right"></i></a>
+                <Button className='bg-blue-500 border-blue-500 px-4' size='sm'>
+                    <a  size="sm"  href={`/admin/project/edit/${project.id}`}><i class="fas fa-arrow-right"></i></a>
                 </Button>
             </ListGroup.Item>
           </div>

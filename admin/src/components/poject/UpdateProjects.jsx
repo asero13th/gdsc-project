@@ -95,7 +95,7 @@ const Updateprojects = () => {
    
     
   return (
-    <div className='mb-5'>
+    <div className='mb-5 top-0 right-10 absolute h-screen w-2/3'>
         <div  className='container mx-auto max-w-5xl'>
         <div className='container mx-auto max-w-7xl border border-solid border-gray-400 p-2 rounded d-flex justify-content-between mb-5 mt-3'>
             <h3 className='fw-bold mt-1 text-center'> update project</h3>
@@ -165,7 +165,7 @@ const Updateprojects = () => {
                                       {contributer.name}
                                   </div>
                                   <Button size='sm'>
-                                      <a href={`/member/edit/${contributer.id}`}><i class="fas fa-arrow-right"></i></a>
+                                      <a href={`/admin/member/edit/${contributer.id}`}><i class="fas fa-arrow-right"></i></a>
                                   </Button>
                               </ListGroup.Item>
                             </div>  

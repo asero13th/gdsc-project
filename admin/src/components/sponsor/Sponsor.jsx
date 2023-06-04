@@ -23,11 +23,11 @@ const SponsorList = () => {
     return <div>loading...</div>
   }
   return (  
-    <div className='container mx-auto max-w-7xl mt-3'>
+    <div className='container mx-auto max-w-7xl mt-3 top-0 right-10 absolute h-screen w-2/3'>
       <div className='border border-solid border-gray-400 p-2 rounded d-flex justify-content-between mb-5 mt-3'>
         <h4 className='fw-bold mt-2'>Sponsors</h4>
         <div>
-            <Button variant="primary" size='sm' href='/admin/sponsor/new'>
+            <Button className='bg-blue-500 border-blue-500 px-4' variant="primary" size='sm' href='/admin/sponsor/new'>
                 Add+
             </Button>
         </div>
@@ -39,10 +39,10 @@ const SponsorList = () => {
                 as="li"
                 className="d-flex justify-content-between align-items-start border border-solid border-gray-400 p-2 rounded"
                 >
-                <div className="ms-2 me-auto mt-2">
+                <div className="ms-2 me-auto mt-2 ">
                     {sponsor.name}
                 </div>
-                <Button size='sm'>
+                <Button size='sm' className='bg-blue-500 border-blue-500 px-4'>
                     <a href={`/admin/sponsor/edit/${sponsor.id}`}><i class="fas fa-arrow-right"></i></a>
                 </Button>
             </ListGroup.Item>
@@ -61,7 +61,6 @@ const Sponsor = () => {
       <div>
         <h1>Unauthorized Access</h1>
         <p>You must be logged in as an admin to access this page.</p>
-        <button onClick={() => navigate('/admin/login')}>Login</button>
       </div>
     );
   }

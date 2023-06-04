@@ -15,6 +15,7 @@ import Updatesponsor from './components/sponsor/SponsorEdit';
 import Team  from './components/team/Team';
 import MemberUpdateForm from './components/team/UpdateTeam'; 
 import MemberForm from './components/team/AddMember';
+import UploadImages from './components/poject/UploadProjectImage';
 const history = createBrowserHistory();
 
 function App() {
@@ -35,11 +36,12 @@ function App() {
       <Routes>
       <Route path="admin/project"  element={<Project />} />
       <Route path="/admin/project/new" element={<CreateProject  />} />
+      <Route path='/admin/project/edit/:id' element = {<UpdateProjects />} />
+      <Route path='/admin/project/imageupload/:id' element = {<UploadImages />} />
       <Route path="/admin/sponsor" element={<Sponsor  />} />
       <Route path="/admin/sponsor/new" element={<SponsorAdd  />} />
       <Route path="/admin/sponsor/edit/:id" element={<Updatesponsor />} />
-      <Route path="/admin/login" element={<Login  />} />
-      <Route path='/admin/project/edit/:id' element = {<UpdateProjects />} />
+      <Route path="/admin/login" element={<Login  />} /> 
       <Route exact path='/admin/team/' element = {<Team />} />
       <Route exact path='/admin/member/new' element = {<MemberForm />} />
       <Route path='/admin/member/edit/:id' element = {<MemberUpdateForm />} />
